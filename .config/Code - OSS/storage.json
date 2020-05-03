@@ -59,6 +59,7 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "fsPath": "/home/bram/dotfiles",
                                         "external": "file:///home/bram/dotfiles",
                                         "path": "/home/bram/dotfiles",
                                         "scheme": "file"
@@ -270,8 +271,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder",
-                        "enabled": false
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -471,7 +471,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar"
+                                    "label": "Show &&Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -674,8 +675,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -744,54 +744,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1538,13 +1529,14 @@
     "themeBackground": "#1e1e1e",
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/bram/.config/Code - OSS/Backups/1588521772755",
+            "folder": "file:///home/bram/dotfiles",
+            "backupPath": "/home/bram/.config/Code - OSS/Backups/7f4480be1ba1ee97388d927574586acf",
             "uiState": {
                 "mode": 1,
-                "x": 10,
-                "y": 10,
-                "width": 1900,
-                "height": 1060
+                "x": 967,
+                "y": 40,
+                "width": 941,
+                "height": 1028
             }
         },
         "openedWindows": []
