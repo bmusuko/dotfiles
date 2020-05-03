@@ -1,8 +1,0 @@
-2020-05-03 22:29:35,701 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
-2020-05-03 22:29:35,703 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
-2020-05-03 22:29:35,705 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "bram.musuko@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID: "celtic-vent-271705"]
-2020-05-03 22:29:35,757 INFO     oauth2client.client Refreshing access_token
-2020-05-03 22:29:37,822 INFO     root            Display format: "default value(name)"
-2020-05-03 22:29:37,823 INFO     ___FILE_ONLY___ My First Project
-
-2020-05-03 22:29:37,824 DEBUG    root            SDK update checks are disabled.

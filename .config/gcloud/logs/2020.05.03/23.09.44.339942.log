@@ -1,9 +1,0 @@
-2020-05-03 23:09:44,344 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
-2020-05-03 23:09:44,345 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
-2020-05-03 23:09:44,347 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "bram.musuko@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID: "celtic-vent-271705"]
-2020-05-03 23:09:51,770 DEBUG    root            Caught server not found error, retrying: Unable to find the server at cloudresourcemanager.googleapis.com
-2020-05-03 23:09:51,770 DEBUG    root            Retrying request to url https://cloudresourcemanager.googleapis.com/v1/projects/celtic-vent-271705?alt=json after exception Unable to find the server at cloudresourcemanager.googleapis.com
-2020-05-03 23:09:59,871 INFO     root            Display format: "default value(name)"
-2020-05-03 23:09:59,872 INFO     ___FILE_ONLY___ My First Project
-
-2020-05-03 23:09:59,873 DEBUG    root            SDK update checks are disabled.
