@@ -1,0 +1,80 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+full_text=〉
+align=center
+color=#666666
+separator=false
+separator_block_width=7
+
+[logo]
+full_text="息子"
+color="#f2f2f2"
+
+[seperator]
+
+[spotify]
+interval=persist
+command=~/.script/spotifybar
+color="#f2f2f2"
+
+[spotify-previous]
+full_text=
+color=#FFD54F
+command=playerctl --player=spotify previous
+
+[spotify-play-pause]
+full_text=
+color=#FF7043
+command=playerctl --player=spotify play-pause
+
+[spotify-next]
+full_text=
+color=#FFD54F
+command=playerctl --player=spotify next
+
+[seperator]
+
+[time]
+command=date '+%d %b %H:%M:%S'
+color="#f2f2f2"
+interval=1
+
+[separator]
+
+[brightness]
+command=~/.script/brightness
+signal=5
+interval=once
+color="#f2f2f2"
+
+[seperator]
+
+[volume]
+command=~/.script/volume
+signal=10
+interval=once
+color="#f2f2f2"
+
+[seperator]
+
+[cpu]
+command=~/.script/cpu
+interval=10
+color="#f2f2f2"
+[seperator]
+
+
+
+[Battery]
+command=~/.script/battery
+interval=10
+color="#f2f2f2"
+
+[Wifi]
+command=nmgui

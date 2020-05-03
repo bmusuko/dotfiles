@@ -1,0 +1,7 @@
+2020-05-03 21:34:36,717 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2020-05-03 21:34:36,719 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2020-05-03 21:34:36,721 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "bram.musuko@gmail.com", --configuration: "default", --format: "value(name)", PROJECT_ID: "celtic-vent-271705"]
+2020-05-03 21:34:43,096 INFO     root            Display format: "default value(name)"
+2020-05-03 21:34:43,096 INFO     ___FILE_ONLY___ My First Project
+
+2020-05-03 21:34:43,097 DEBUG    root            SDK update checks are disabled.

@@ -1,0 +1,3 @@
+[2020-05-02 09:01:46.650] [sharedprocess] [info] main {"machineId":"96d434178707bdc6c3ca21f696cc0811ac22100babbe5ff415444efa969da444","windowId":2}
+[2020-05-02 09:01:46.664] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/bram/.config/Code - OSS/User/snippets'
+[2020-05-02 09:02:26.660] [sharedprocess] [info] Starting to clean up unused language packs.

@@ -1,0 +1,4 @@
+BULB=""
+
+echo -n " $BULB "
+printf "%.0f\n" $(xbacklight)

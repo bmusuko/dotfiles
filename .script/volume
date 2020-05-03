@@ -1,0 +1,22 @@
+
+#!/bin/bash
+
+VOLUME=$( pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')
+IS_MUTED=$(pacmd list-sinks | awk '/muted/ { print $2 }')
+
+VOLUME_LOW=""
+VOLUME_MUTE="🔇"
+VOLUME_HIGH=""
+VOLUME_OFF=""
+
+if [ "$IS_MUTED" = "yes" ]; then
+	echo -n " $VOLUME_MUTE";
+elif [ ${VOLUME} -ge 60 ]; then
+	echo -n " $VOLUME_HIGH";
+elif [ ${VOLUME} -ge 20 ]; then
+	echo -n " $VOLUME_LOW ";
+else
+	echo -n " $VOLUME_OFF ";
+fi
+
+echo " $VOLUME "

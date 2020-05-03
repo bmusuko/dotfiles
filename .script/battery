@@ -1,0 +1,27 @@
+#!/bin/bash
+
+BAT=$(acpi | grep -E -o '[0-9][0-9][0-9]?%')
+IS_CHARGED=$(acpi -a | cut -d ' ' -f 3 | cut -d '-' -f 1)
+BAT_EMPTY=""
+BAT_FULL=""
+BAT_HALF=""
+BAT_QUARTER=""
+BAT_THREE=""
+BAT_CHARGED=""
+
+
+if [ ${IS_CHARGED} = "on" ]; then
+	echo -n " $BAT_CHARGED " 
+elif [ ${BAT%?} -ge 80 ]; then
+	echo -n " $BAT_FULL ";
+elif [ ${BAT%?} -ge 60 ]; then
+	echo -n " $BAT_THREE "
+elif [ ${BAT%?} -ge 40 ]; then
+	echo -n " $BAT_HALF "
+elif [ ${BAT%?} -ge 20 ]; then
+	echo -n " $BAT_QUARTER "
+else
+	echo -n " $BAT_EMPTY "
+fi
+
+echo "$BAT "

@@ -1,0 +1,59 @@
+2020-05-03 21:16:17,691 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'compute']
+2020-05-03 21:16:17,728 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'compute', 'ssh']
+2020-05-03 21:16:17,731 DEBUG    root            Running [gcloud.beta.compute.ssh] with arguments: [--project: "celtic-vent-271705", --zone: "asia-southeast1-b", [USER@]INSTANCE: "instance-personal"]
+2020-05-03 21:16:17,941 WARNING  root            The private SSH key file for gcloud does not exist.
+2020-05-03 21:16:17,942 WARNING  root            The public SSH key file for gcloud does not exist.
+2020-05-03 21:16:17,942 WARNING  root            You do not have an SSH key for gcloud.
+2020-05-03 21:16:17,942 WARNING  root            SSH keygen will be executed to generate a key.
+2020-05-03 21:16:17,942 DEBUG    root            Running command [/usr/bin/ssh-keygen -t rsa -f /home/bram/.ssh/google_compute_engine].
+2020-05-03 21:16:17,943 DEBUG    root            Executing command: ['/usr/bin/ssh-keygen', '-t', 'rsa', '-f', '/home/bram/.ssh/google_compute_engine']
+2020-05-03 21:16:34,076 DEBUG    root            Caught server not found error, retrying: Unable to find the server at compute.googleapis.com
+2020-05-03 21:16:34,077 DEBUG    root            Retrying request to url https://compute.googleapis.com/batch/compute/beta after exception Unable to find the server at compute.googleapis.com
+2020-05-03 21:16:35,852 DEBUG    root            Caught server not found error, retrying: Unable to find the server at compute.googleapis.com
+2020-05-03 21:16:35,852 DEBUG    root            Retrying request to url https://compute.googleapis.com/batch/compute/beta after exception Unable to find the server at compute.googleapis.com
+2020-05-03 21:16:40,514 DEBUG    root            Caught server not found error, retrying: Unable to find the server at compute.googleapis.com
+2020-05-03 21:16:40,515 DEBUG    root            Retrying request to url https://compute.googleapis.com/batch/compute/beta after exception Unable to find the server at compute.googleapis.com
+2020-05-03 21:17:04,081 DEBUG    root            Caught server not found error, retrying: Unable to find the server at compute.googleapis.com
+2020-05-03 21:17:04,081 DEBUG    root            Retrying request to url https://compute.googleapis.com/batch/compute/beta after exception Unable to find the server at compute.googleapis.com
+2020-05-03 21:17:22,633 DEBUG    root            SSH Known Hosts File [/home/bram/.ssh/google_compute_known_hosts] could not be opened: Unable to read file [/home/bram/.ssh/google_compute_known_hosts]: [Errno 2] No such file or directory: '/home/bram/.ssh/google_compute_known_hosts'
+2020-05-03 21:17:22,633 DEBUG    root            Current SSH keys in project: ['bram_musuko:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvO3poHzah/5nFyz475z32uwFaroj7/jdEgoCdHkwZq6jgX+ntju8JVuMPKNSqhBpn0lk526nO5xHdvdSb7ZIPDKJwPwjtGj9BrIuoSHDW320LG9QL4JMhXmrvTUqyJ/aD/zBAxJuO9bOEFY0RZ2/IIVTWFsagwPmI0iTDJWa5CuOQKCzQPrx2nXQMXCE9rR9PmZ5n3F0JlklT5TRjMCGEs21gFAfySf89TX2JD9g72BhYDJlZI2igv3I+7H3MPJ65pXp+tqGx0oO8ES8Iju4ZnfGK1Ye/2+Jj1l2doQ3CTrUtDmfQZIA3+MpDHA0DJ30oH+RPSLt3mXHnqLB7CYd9 bram_musuko@cs-6000-devshell-vm-636a8f83-1554-4ad3-83c7-7bd56373743d', 'bram:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDyrN8ZL+K2Tyk2TedqIjZwC59qN87KIueQ+yBNWlivAzV7KryQevMxffOnhLLnOEIBOiY633vSeoUHzPCuv22+TrEs1zHijf0D9jPPrTT6THnrQTNe85oDd/gJ2ZC8Wrvicb36rulSt4uB3atWara4ufsJRdLA55GFsyKkVkOdt2MKbO5KW5GwsKv7PtiyQR0acxoKoXZn2glaEC1zVc6uluqhDkJoHqIb40rAb9VRrkC5iW8jPdvMpek9gyQHQQktt5WtW70UfmTrV5OrkRkKaB4coQr6TBEAqL9ZE6/T1Wx9OIFI1bE1U6J4YInyU7b7OcewrNIpgNOXedseqZft bram@bram']
+2020-05-03 21:17:22,634 INFO     ___FILE_ONLY___ Updating project ssh metadata...
+2020-05-03 21:17:23,660 DEBUG    root            Operations to inspect: [<Operation
+ id: 7332015720567631004
+ insertTime: '2020-05-03T07:17:23.388-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1588515442827-5a4bf12b0a045-1017601e-e3404453'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/beta/projects/celtic-vent-271705/global/operations/operation-1588515442827-5a4bf12b0a045-1017601e-e3404453'
+ startTime: '2020-05-03T07:17:23.391-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 995651314174
+ targetLink: 'https://www.googleapis.com/compute/beta/projects/celtic-vent-271705'
+ user: 'bram.musuko@gmail.com'
+ warnings: []>]
+2020-05-03 21:17:34,959 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2020-05-03T07:17:34.784-07:00'
+ id: 7332015720567631004
+ insertTime: '2020-05-03T07:17:23.388-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1588515442827-5a4bf12b0a045-1017601e-e3404453'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/beta/projects/celtic-vent-271705/global/operations/operation-1588515442827-5a4bf12b0a045-1017601e-e3404453'
+ startTime: '2020-05-03T07:17:23.391-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 995651314174
+ targetLink: 'https://www.googleapis.com/compute/beta/projects/celtic-vent-271705'
+ user: 'bram.musuko@gmail.com'
+ warnings: []>]
+2020-05-03 21:17:34,960 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/beta/projects/celtic-vent-271705].
+
+2020-05-03 21:17:35,661 INFO     ___FILE_ONLY___ Waiting for SSH key to propagate.
+
+2020-05-03 21:17:35,661 DEBUG    root            Running command [/usr/bin/ssh -T -i /home/bram/.ssh/google_compute_engine -o CheckHostIP=no -o HostKeyAlias=compute.8467515437676585198 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/home/bram/.ssh/google_compute_known_hosts bram@35.240.133.248 -- true].
+2020-05-03 21:17:35,662 DEBUG    root            Executing command: ['/usr/bin/ssh', '-T', '-i', '/home/bram/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HostKeyAlias=compute.8467515437676585198', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/home/bram/.ssh/google_compute_known_hosts', 'bram@35.240.133.248', '--', 'true']
+2020-05-03 21:17:36,668 DEBUG    root            Running command [/usr/bin/ssh -t -i /home/bram/.ssh/google_compute_engine -o CheckHostIP=no -o HostKeyAlias=compute.8467515437676585198 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/home/bram/.ssh/google_compute_known_hosts bram@35.240.133.248].
+2020-05-03 21:17:36,668 DEBUG    root            Executing command: ['/usr/bin/ssh', '-t', '-i', '/home/bram/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HostKeyAlias=compute.8467515437676585198', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/home/bram/.ssh/google_compute_known_hosts', 'bram@35.240.133.248']
+2020-05-03 21:21:28,360 INFO     root            Display format: "default"
+2020-05-03 21:21:28,362 DEBUG    root            SDK update checks are disabled.

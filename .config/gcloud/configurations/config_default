@@ -1,0 +1,8 @@
+[core]
+account = bram.musuko@gmail.com
+project = celtic-vent-271705
+
+[compute]
+zone = asia-southeast1-b
+region = asia-southeast1
+

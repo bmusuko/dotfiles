@@ -1,0 +1,10 @@
+2020-05-03 21:21:59,191 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'compute']
+2020-05-03 21:21:59,247 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'compute', 'ssh']
+2020-05-03 21:21:59,251 DEBUG    root            Running [gcloud.beta.compute.ssh] with arguments: [--project: "celtic-vent-271705", --zone: "asia-southeast1-b", [USER@]INSTANCE: "instance-personal"]
+2020-05-03 21:22:10,750 DEBUG    root            Caught server not found error, retrying: Unable to find the server at compute.googleapis.com
+2020-05-03 21:22:10,751 DEBUG    root            Retrying request to url https://compute.googleapis.com/batch/compute/beta after exception Unable to find the server at compute.googleapis.com
+2020-05-03 21:22:20,757 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+
