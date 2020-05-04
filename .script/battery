@@ -11,17 +11,17 @@ BAT_CHARGED=""
 
 
 if [ ${IS_CHARGED} = "on" ]; then
-	echo -n " $BAT_CHARGED " 
+	echo -n "$BAT_CHARGED " 
 elif [ ${BAT%?} -ge 80 ]; then
-	echo -n " $BAT_FULL ";
+	echo -n "$BAT_FULL ";
 elif [ ${BAT%?} -ge 60 ]; then
-	echo -n " $BAT_THREE "
+	echo -n "$BAT_THREE "
 elif [ ${BAT%?} -ge 40 ]; then
-	echo -n " $BAT_HALF "
+	echo -n "$BAT_HALF "
 elif [ ${BAT%?} -ge 20 ]; then
-	echo -n " $BAT_QUARTER "
+	echo -n "$BAT_QUARTER "
 else
-	echo -n " $BAT_EMPTY "
+	echo -n "$BAT_EMPTY "
 fi
 
 echo "$BAT "

@@ -185,7 +185,7 @@ class SpotifyBlocklet:
             artist=artist,
             title=title,
         )
-        print(info, flush=True)
+        print(html.unescape(info), flush=True)
 
 
 def read_config():

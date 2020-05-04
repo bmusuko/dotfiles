@@ -2,3 +2,5 @@
 .config/gcloud
 .config/dconf
 .config/spotify
+.config/xfce4
+.config/pulse

@@ -10,13 +10,13 @@ VOLUME_HIGH=""
 VOLUME_OFF=""
 
 if [ "$IS_MUTED" = "yes" ]; then
-	echo -n " $VOLUME_MUTE";
+	echo -n "$VOLUME_MUTE";
 elif [ ${VOLUME} -ge 60 ]; then
-	echo -n " $VOLUME_HIGH";
+	echo -n "$VOLUME_HIGH";
 elif [ ${VOLUME} -ge 20 ]; then
-	echo -n " $VOLUME_LOW ";
+	echo -n "$VOLUME_LOW";
 else
-	echo -n " $VOLUME_OFF ";
+	echo -n "$VOLUME_OFF";
 fi
 
 echo " $VOLUME "
