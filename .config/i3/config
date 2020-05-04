@@ -299,6 +299,21 @@ mode "$mode_spotify" {
 	bindsym $mod+Shift+s mode "default"
 }
 
+# move floating window
+
+bindsym $mod+m focus floating; mode "move"
+
+mode "move" {
+  	bindsym Up move up 20px
+   	bindsym Left move left 20px
+   	bindsym Down move down 20px
+	bindsym Right move right 20px
+    	bindsym $mod+m mode "default"
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+
+
 # LockScreen
 bindsym $mod+shift+x exec "i3lock-fancy -p -- scrot -z -o"
 
