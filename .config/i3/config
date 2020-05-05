@@ -204,6 +204,7 @@ set $urgent-bg-color     #E53935
 bar {
         status_command i3blocks -c ~/.config/i3blocks/config
 	position top
+	font pango: 18px
 	strip_workspace_numbers yes
 	colors {
 		background $bg-color
@@ -330,3 +331,7 @@ bindsym --release Print exec "scrot -m '/home/bram/Pictures/Screenshots/%s_%H%M_
 bindsym --release Shift+Print exec "scrot -s '/home/bram/Pictures/Screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
 bindsym --release $mod+Shift+Print exec "scrot -u -d 4 '/home/bram/Pictures/Screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
 
+# move between workspace
+
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev

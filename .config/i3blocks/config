@@ -41,7 +41,7 @@ command=playerctl --player=spotify next
 [seperator]
 
 [time]
-command=date '+%a, %d %b %H:%M:%S '
+command=date '+%a, %d %b %H:%M:%S'
 color="#f2f2f2"
 interval=1
 
@@ -79,5 +79,6 @@ min_width=" 100%"
 interval=10
 color="#f2f2f2"
 
-[Wifi]
-command=nmgui
+#[Wifi]
+#command=nmgui
+

@@ -47,8 +47,8 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 
 !! URxvt Appearance
 URxvt.font: xft:Hack Nerd Font Mono:style=Bold:size=12,xft:DejaVu Sans Mono for Powerline
-URxvt.letterSpace: -5
-URxvt.lineSpace: 2
+URxvt.letterSpace: -3
+URxvt.lineSpace: 5
 URxvt.geometry: 92x24
 URxvt.internalBorder: 24
 URxvt.cursorBlink: true
