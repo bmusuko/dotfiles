@@ -14,14 +14,14 @@ separator_block_width=7
 
 [logo]
 full_text="息子"
-color="#f2f2f2"
+color="#f38181"
 
 [seperator]
 
 [spotify]
 interval=persist
 command=~/.script/spotifybar
-color="#f2f2f2"
+color="#ff7043"
 
 [spotify-previous]
 full_text=
@@ -40,9 +40,19 @@ command=playerctl --player=spotify next
 
 [seperator]
 
+[day]
+command=date '+(%a)'
+color="#95e1d3"
+interval=1
+
+[date]
+command=date '+%d %b'
+color="#eaffd0"
+interval=1
+
 [time]
-command=date '+%a, %d %b %H:%M:%S'
-color="#f2f2f2"
+command=date '+%H:%M:%S'
+color="#fce38a"
 interval=1
 
 [separator]
@@ -52,7 +62,7 @@ command=~/.script/brightness
 min_width=" 100 "
 signal=5
 interval=once
-color="#f2f2f2"
+color="#f6d743"
 
 [seperator]
 
@@ -61,14 +71,14 @@ command=~/.script/volume
 min_width= "🔇 100"
 signal=10
 interval=once
-color="#f2f2f2"
+color="#efa8e4"
 
 [seperator]
 
 [cpu]
 command=~/.script/cpu
 interval=10
-color="#f2f2f2"
+color="#58b4ae"
 [seperator]
 
 

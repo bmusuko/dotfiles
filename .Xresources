@@ -45,9 +45,12 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 *.color7: #bfbaac
 *.color15: #fdf6e3
 
+
+
 !! URxvt Appearance
-URxvt.font: xft:Hack Nerd Font Mono:style=Bold:size=12,xft:DejaVu Sans Mono for Powerline
-URxvt.letterSpace: -3
+URxvt*font:     xft:mono:medium:size=14,xft:DejaVu Sans Mono for Powerline
+xterm*faceName: xft:mono:medium:size=14
+URxvt.letterSpace: -1
 URxvt.lineSpace: 5
 URxvt.geometry: 92x24
 URxvt.internalBorder: 24
@@ -60,6 +63,8 @@ URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
 Urxvt.perl-ext-common: default,tabbed,matcher,resize-font,-tabbed
+Xft.rgba: none 
+Xft.hintstyle: hintfull
 
 URxvt.keysym.C-Down:  resize-font:smaller
 URxvt.keysym.C-Up:    resize-font:bigger

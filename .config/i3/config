@@ -318,7 +318,7 @@ mode "move" {
 # LockScreen
 #bindsym $mod+l exec "i3lock-fancy -p -- scrot -z -o"
 bindsym $mod+l exec "~/.script/lock"
-exec xautolock -time 15 -locker '~/.script/lock' &
+exec xautolock -time 15 -locker '~/.script/lock'
 
 # Wallpaper
 exec --no-startup-id feh --randomize  --bg-fill ~/Pictures/Wallpapers/bears-in-space.jpg
