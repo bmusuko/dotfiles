@@ -321,11 +321,12 @@ bindsym $mod+l exec "~/.script/lock"
 exec xautolock -time 15 -locker '~/.script/lock' &
 
 # Wallpaper
-exec_always --no-startup-id feh --randomize  --bg-fill ~/Pictures/Wallpapers/*
+exec --no-startup-id feh --randomize  --bg-fill ~/Pictures/Wallpapers/bears-in-space.jpg
 
 # Startup application
 exec firefox
 exec thunderbird
+exec picom --config ~/.config/picom/picom.conf
 #exec spotify
 
 # screenshot tool

@@ -11,7 +11,7 @@ from copy import deepcopy
 import dbus
 from dbus.mainloop.glib import DBusGMainLoop, threads_init
 from gi.repository import GLib
-
+MAX_CHAR = 30
 
 class Formatter(string.Formatter):
 
@@ -185,7 +185,10 @@ class SpotifyBlocklet:
             artist=artist,
             title=title,
         )
-        print(html.unescape(info), flush=True)
+        final_info = html.unescape(info)
+        if (len(final_info) > MAX_CHAR):
+            final_info = final_info[:MAX_CHAR]+'...'
+        print(final_info, flush=True)
 
 
 def read_config():
