@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BAT=$(acpi | grep -E -o '[0-9][0-9][0-9]?%')
+BAT=$(acpi| cut -d ',' -f2|awk '{print $1}')
 IS_CHARGED=$(acpi -a | cut -d ' ' -f 3 | cut -d '-' -f 1)
 BAT_EMPTY=""
 BAT_FULL=""

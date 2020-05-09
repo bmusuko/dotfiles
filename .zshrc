@@ -81,6 +81,7 @@ plugins=(
 	zsh-syntax-highlighting
 	docker
 	command-not-found
+	bgnotify
 )
 
 source $ZSH/oh-my-zsh.sh
