@@ -7,3 +7,5 @@
 - Shell : zsh
 - Terminal Emulator : urxvt
 - Menu : [Rofi](https://github.com/davatorium/rofi)
+
+![Result](./screenshots/pic1.png)
