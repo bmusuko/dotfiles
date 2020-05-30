@@ -157,6 +157,7 @@ for_window [class="code-oss"] move to workspace $ws3
 for_window [class="Thunderbird"] move to workspace $ws8
 for_window [class="TelegramDesktop"] move to workspace $ws9 
 for_window [class="Spotify"] move to workspace $ws10
+for_window [class="Musixmatch"] move to workspace $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -338,3 +339,5 @@ bindsym --release $mod+Shift+Print exec "scrot -u -d 4 '/home/bram/Pictures/Scre
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
+
+exec_always --no-startup-id autotiling
