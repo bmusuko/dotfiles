@@ -132,3 +132,13 @@ dict(){
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#bindkey -v
+#bindkey '^a' beginning-of-line
+#bindkey '^b' backward-char
+#bindkey '^e' end-of-line
+#bindkey '^f' forward-char
+#bindkey '^h' backward-delete-char
+#bindkey '^k' kill-line
+#bindkey '^u' kill-whole-line
+#bindkey '^w' backward-kill-word

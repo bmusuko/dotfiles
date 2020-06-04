@@ -120,7 +120,7 @@ set $ws1 "1:龜"
 set $ws2 "2:" 
 set $ws3 "3:"
 set $ws4 "4:"
-set $ws5 "5:5"
+set $ws5 "5:"
 set $ws6 "6:"
 set $ws7 "7:"
 set $ws8 "8:"
@@ -341,3 +341,8 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 exec_always --no-startup-id autotiling
+
+bindsym $mod+F1 exec firefox
+bindsym $mod+F9 exec telegram-desktop
+
+bindsym $mod+F10 exec spotify;exec musixmatch
