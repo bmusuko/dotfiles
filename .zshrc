@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias c='xclip -se c'
-alias webcam="mpv --demuxer-lavf-format=video4linux2 --demuxer-lavf-o-set=input_format=mjpeg av://v4l2:/dev/video0"
+alias webcam="mpv --demuxer-lavf-format=video4linux2 --demuxer-lavf-o-set=input_format=mjpeg av://v4l2:/dev/video0 --no-terminal & disown"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
@@ -123,7 +123,7 @@ alias lastcommand="history | tail -n 1 | cut -d ' ' -f4-"
 
 
 vid(){
-	mpv --really-quiet "$@" & disown
+	mpv --no-terminal "$@" & disown
 }
 dict(){
 	curl dict://dict.org/d:"$@"

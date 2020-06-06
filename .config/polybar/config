@@ -1,0 +1,202 @@
+[settings]
+throttle-ms = 50
+throttle-limit = 5
+
+[bar/top]
+	dpi      = 192
+	width    = 100%
+	height   = 32
+	offset-x = 0
+	offset-y = 0
+
+	bottom = false
+	;wm-restack = i3
+
+	background = ${xrdb:background}
+	foreground = ${xrdb:foreground}
+
+	border-bottom-size  = 0
+	border-top-size     = 0
+	border-left-size  = 0
+	border-right-size = 0
+
+	border-bottom-color = #0f0f0f
+	border-top-color    = #0f0f0f
+
+	border-left-color  = #0f0f0f
+	border-right-color = #0f0f0f
+
+
+	spacing            = 0
+	padding-left       = 3
+	padding-right      = 3
+	module-margin-left = 0
+
+	tray-position = right
+	tray-padding = 2
+	tray-detached = false
+	tray-maxsize = 22
+	tray-background = ${xrdb:background}
+	tray-offset-x = 0
+	tray-offset-y = 0
+	;tray-padding = 0
+	tray-scale = 1.0
+	
+
+	font-0 = NotoSans-Regular:size=5;0
+	font-1 = FontAwesome5Free:style=Solid:size=5;4
+	font-2 = FontAwesome5Free:style=Regular:size=5;4
+	font-3 = FontAwesome5Brands:style=Regular:size=5;4
+
+
+	modules-left = i3
+	modules-center = xwindow
+	modules-right = volume date battery network sysmenu
+
+[module/i3]
+type = internal/i3
+
+format-spacing = 0
+index-sort=true
+wrapping-scroll=false
+pin-workspaces = false
+enable-click = true
+enable-scroll = true
+
+label-mode = %mode%
+
+label-focused = "%icon%"
+label-focused-padding = 2
+label-focused-margin = 2
+label-focused-font = 3
+label-focused-foreground = ${xrdb:foreground}
+label-focused-background = ${xrdb:background}
+label-focused-overline = ${xrdb:color6}
+label-focused-underline =${xrdb:color6}
+
+label-unfocused = "%icon%"
+label-unfocused-padding = 2
+label-unfocused-margin = 2
+label-unfocused-background = ${xrdb:background}
+label-unfocused-foreground = ${xrdb:foreground}
+label-unfocused-overline = #c5c5c5
+label-unfocused-underline = #c5c5c5
+label-unfocused-font = 3
+
+label-urgent = "%index%"
+label-urgent-padding = 2
+label-urgent-margin = 2
+label-urgent-font = 3
+
+label-visible = "%index%"
+label-visible-padding = 2
+label-visible-margin = 2
+label-visible-font = 3
+ 
+ws-icon-0 = "1;"
+ws-icon-1 = "2;"
+ws-icon-2 = "3;"
+ws-icon-3 = "4;"
+ws-icon-4 = "5;"
+ws-icon-5 = "6;"
+ws-icon-6 = "7;"
+ws-icon-7 = "8;"
+ws-icon-8 = "9;"
+ws-icon-9 = "10;"
+
+[module/date]
+type     = internal/date
+interval = 1.0
+time     = "%I:%M %p"
+label    = "%time%"
+
+format         = <label>
+format-padding = 0
+
+label-background = ${xrdb:background}
+label-foreground = ${xrdb:foreground}
+label-padding    = 2
+
+[module/volume]
+type          = internal/pulseaudio
+format-volume = <label-volume>
+
+mapped = true
+
+label-volume            = "%percentage%%"
+label-volume-background = ${xrdb:background}
+label-volume-foreground = ${xrdb:foreground}
+label-volume-padding    = 1
+
+format-muted = <label-muted>
+
+label-muted            = "0% (muted)"
+label-muted-background = ${xrdb:background}
+label-muted-foreground = ${xrdb:foreground}
+label-muted-padding    = 1
+
+format-volume-padding = 0
+format-muted-padding  = 0
+
+[module/xwindow]
+	y-offset      = 10
+	type          = internal/xwindow
+	format        = <label>
+	label         = %title:0:50:%
+	label-padding = 2
+
+; vim:ft=dosini
+
+[module/battery]
+type          = internal/battery
+full-at       = 98
+battery       = BAT0
+adapter       = AC0
+poll-interval = 5
+
+format-charging = <label-charging>
+
+label-charging            = "%percentage%%"
+label-charging-background = ${xrdb:background}
+label-charging-foreground = ${xrdb:foreground}
+label-charging-padding    = 2
+
+format-discharging = <label-discharging>
+
+label-discharging            = "%percentage%%"
+label-discharging-background = ${xrdb:background}
+label-discharging-foreground = ${xrdb:foreground}
+label-discharging-padding    = 2
+
+format-full = <label-full>
+
+label-full            = "%percentage%%"
+label-full-background = ${xrdb:background}
+label-full-foreground = ${xrdb:foreground}
+label-full-padding    = 2
+
+[module/network]
+type = internal/network
+interface = wlan0
+
+interval = 1.0
+
+accumulate-stats = true
+
+unknown-as-up = true
+
+format-connected = <ramp-signal> <label-connected>
+
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = " "
+format-disconnected-prefix-foreground = ${xrdb:foreground}
+
+label-connected = "%essid%  %downspeed%"
+label-disconnected = Disconnected
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${xrdb:foreground}
