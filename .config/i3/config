@@ -361,3 +361,5 @@ bindsym $mod+F1 exec firefox
 bindsym $mod+F9 exec telegram-desktop
 
 bindsym $mod+F10 exec spotify;exec musixmatch
+
+exec ~/.config/polybar/script/spotify/launchlistener.sh
