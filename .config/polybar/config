@@ -51,7 +51,7 @@ throttle-limit = 5
 	font-3 = FontAwesome5Brands:style=Regular:size=6;2
 
 
-	modules-left = i3
+	modules-left = i3 xwindow
 	modules-center = spotify previous playpause next
 	modules-right = memory temperature volume date network battery
 
