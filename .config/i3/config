@@ -333,7 +333,7 @@ mode "move" {
 # LockScreen
 #bindsym $mod+l exec "i3lock-fancy -p -- scrot -z -o"
 bindsym $mod+l exec "~/.script/lock"
-exec xautolock -time 15 -locker '~/.script/lock'
+exec xautolock -time 30 -locker '~/.script/lock'
 #exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer normal 10 '~/.script/lock' ''
 
 # Wallpaper

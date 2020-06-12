@@ -56,9 +56,9 @@ try:
     
     # Python3 uses UTF-8 by default. 
     if sys.version_info.major == 3:
-        print(output.format(artist=artist, song=song))
+        print(f'  {output.format(artist=artist, song=song)}')
     else:
-        print(output.format(artist=artist, song=song).encode('UTF-8'))
+        print(f'  {output.format(artist=artist, song=song).encode("UTF-8")}')
 except Exception as e:
     if isinstance(e, dbus.exceptions.DBusException):
         print('')

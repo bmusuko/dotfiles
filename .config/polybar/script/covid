@@ -1,0 +1,3 @@
+#!/bin/zsh
+curl -X GET -s https://covid19.mathdro.id/api/countries/indonesia/  2> /dev/null | jq '.["confirmed"]["value"]' | { count=$(< /dev/stdin); printf " %'.3f\n" $count} | sed 's/,/./g' | rev | cut -c 5- | rev 
+

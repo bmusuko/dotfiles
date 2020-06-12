@@ -117,7 +117,7 @@ alias webcam="mpv --demuxer-lavf-format=video4linux2 --demuxer-lavf-o-set=input_
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 export PATH=/home/bram/.script:/home/bram/.local/bin:$PATH
-alias lastcommand="history | tail -n 1 | cut -d ' ' -f4-"
+alias lastcommand=" history | tail -n 1 | cut -d ' ' -f4-"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

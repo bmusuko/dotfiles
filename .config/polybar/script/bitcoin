@@ -1,0 +1,3 @@
+#!/bin/zsh
+curl -X GET -s https://api.coingecko.com/api/v3/simple/price\?ids\=bitcoin\&vs_currencies\=idr  2> /dev/null | jq '.["bitcoin"]["idr"]'  | { price=$(< /dev/stdin); printf " Rp. %'.3f\n" $price } | sed 's/,/./g' | rev | cut -c 5- | rev
+
