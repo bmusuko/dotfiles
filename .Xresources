@@ -28,7 +28,8 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 *.color15:    #E6E6E6
 
 !! URxvt Appearance
-URxvt*font:     xft:mono:medium:size=14,xft:DejaVu Sans Mono for Powerline
+!URxvt*font:     xft:mono:medium:size=14,xft:DejaVu Sans Mono for Powerline
+URxvt*font:     xft:MesloLGS NF:size=14
 xterm*faceName: xft:mono:medium:size=14
 URxvt.letterSpace: -1
 URxvt.lineSpace: 0
